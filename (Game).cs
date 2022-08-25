@@ -111,18 +111,18 @@ namespace matchGame
                 }
             }
             timer2.Stop();
-            MessageBox.Show("You won the game " + myLabel);
+            MessageBox.Show("You won the game " + myTimer);
             Close();
         }
 
         private int i = 0;
 
-        private string myLabel;
+        private string myTimer;
 
         private void timer2_Tick(object sender, EventArgs e)
         {
             i++;
-            myLabel = "Match duration " + i.ToString() + " seconds";
+            myTimer = "Match duration " + i.ToString() + " seconds";
         }
     }
 }
